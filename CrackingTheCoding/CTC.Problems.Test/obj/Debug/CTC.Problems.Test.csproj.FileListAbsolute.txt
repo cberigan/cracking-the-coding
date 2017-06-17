@@ -1,0 +1,9 @@
+C:\Users\cberigan\Documents\Repos\cracking-the-coding\CrackingTheCoding\CTC.Problems.Test\bin\Debug\CTC.Problems.Test.dll
+C:\Users\cberigan\Documents\Repos\cracking-the-coding\CrackingTheCoding\CTC.Problems.Test\bin\Debug\CTC.Problems.Test.pdb
+C:\Users\cberigan\Documents\Repos\cracking-the-coding\CrackingTheCoding\CTC.Problems.Test\bin\Debug\nunit.framework.dll
+C:\Users\cberigan\Documents\Repos\cracking-the-coding\CrackingTheCoding\CTC.Problems.Test\bin\Debug\nunit.framework.xml
+C:\Users\cberigan\Documents\Repos\cracking-the-coding\CrackingTheCoding\CTC.Problems.Test\obj\Debug\CTC.Problems.Test.csprojResolveAssemblyReference.cache
+C:\Users\cberigan\Documents\Repos\cracking-the-coding\CrackingTheCoding\CTC.Problems.Test\obj\Debug\CTC.Problems.Test.dll
+C:\Users\cberigan\Documents\Repos\cracking-the-coding\CrackingTheCoding\CTC.Problems.Test\obj\Debug\CTC.Problems.Test.pdb
+C:\Users\cberigan\Documents\Repos\cracking-the-coding\CrackingTheCoding\CTC.Problems.Test\bin\Debug\CTC.Problems.dll
+C:\Users\cberigan\Documents\Repos\cracking-the-coding\CrackingTheCoding\CTC.Problems.Test\bin\Debug\CTC.Problems.pdb

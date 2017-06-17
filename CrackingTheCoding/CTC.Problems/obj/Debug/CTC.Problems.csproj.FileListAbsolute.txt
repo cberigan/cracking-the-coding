@@ -1,0 +1,5 @@
+C:\Users\cberigan\Documents\Repos\cracking-the-coding\CrackingTheCoding\CTC.Problems\bin\Debug\CTC.Problems.dll
+C:\Users\cberigan\Documents\Repos\cracking-the-coding\CrackingTheCoding\CTC.Problems\bin\Debug\CTC.Problems.pdb
+C:\Users\cberigan\Documents\Repos\cracking-the-coding\CrackingTheCoding\CTC.Problems\obj\Debug\CTC.Problems.dll
+C:\Users\cberigan\Documents\Repos\cracking-the-coding\CrackingTheCoding\CTC.Problems\obj\Debug\CTC.Problems.pdb
+C:\Users\cberigan\Documents\Repos\cracking-the-coding\CrackingTheCoding\CTC.Problems\obj\Debug\CTC.Problems.csprojResolveAssemblyReference.cache
