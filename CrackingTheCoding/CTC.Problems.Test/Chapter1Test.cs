@@ -60,5 +60,40 @@ namespace CTC.Problems.Test
 
         #endregion
 
+        #region 1.3 URLify
+
+        [Test]
+        public void UrlifyTest()
+        {
+            Assert.AreEqual("Mr%20John%20Smith", Chapter1.Urlify("Mr John Smith    ", 13));
+        }
+        #endregion
+
+        #region 1.5 Palindrome Permutation
+
+        [Test]
+        public void PalindromeTest()
+        {
+            Assert.True(Chapter1.PalidromePermutation("Tact Cao"));
+        }
+        #endregion
+
+        #region 1.6 One Away
+
+        [Test]
+        public void OneAwayTest()
+        {
+            Assert.True(Chapter1.OneAway("abc", "ab"));
+            Assert.True(Chapter1.OneAway("ab", "axb"));
+            Assert.True(Chapter1.OneAway("abc", "abc"));
+            Assert.True(Chapter1.OneAway("apple", "aple"));
+
+            Assert.False(Chapter1.OneAway("abc", "bcc"));
+            Assert.False(Chapter1.OneAway("apple", "apples1"));
+            Assert.False(Chapter1.OneAway("bac", "abc"));
+            Assert.False(Chapter1.OneAway("sdkfjlksd", "askdljalksdj"));
+
+        }
+        #endregion
     }
 }
