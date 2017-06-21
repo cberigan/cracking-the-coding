@@ -186,5 +186,37 @@ namespace CTC.Problems
             }
             return true;
         }
+
+        public static string StringCompression(string s)
+        {
+            if (string.IsNullOrEmpty(s)) return s;
+            var currChar = s[0];
+            var count = 0;
+            var sb = new StringBuilder();
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (s[i] == currChar) count++;
+                else
+                {
+                    count = Apply(sb, currChar, count);
+                    currChar = s[i];
+                }
+            }
+            Apply(sb, currChar, count);
+            var result = sb.ToString();
+            return result.Length < s.Length ? result: s;
+        }
+
+        private static int Apply(StringBuilder sb, char c, int count)
+        {
+            int retCount = count;
+            sb.Append(c);
+            if (count > 1)
+            {
+                sb.Append(count);
+                retCount = 1;
+            }
+            return retCount;
+        }
     }
 }

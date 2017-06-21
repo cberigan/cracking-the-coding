@@ -95,5 +95,18 @@ namespace CTC.Problems.Test
 
         }
         #endregion
+
+        #region 1.7 String Compression
+
+        [Test]
+        public void StringCompressionTest()
+        {
+            Assert.AreEqual("a2bc5a3",Chapter1.StringCompression("aabcccccaaa"));
+            Assert.AreEqual("aabbccddffgghh", Chapter1.StringCompression("aabbccddffgghh"));
+        }
+        #endregion
+
+
+
     }
 }
