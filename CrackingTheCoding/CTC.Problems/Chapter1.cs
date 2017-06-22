@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
 using System.Linq;
@@ -130,7 +131,6 @@ namespace CTC.Problems
             return new string(arr);
         }
 
-
         /// <summary>
         /// Checks if two strings have 0 or 1 changes away from each other in 
         /// terms of insert, delete, and replace operations.
@@ -217,6 +217,25 @@ namespace CTC.Problems
                 retCount = 1;
             }
             return retCount;
+        }
+
+        public static void RotateMatrix(int[,] a)
+        {
+            if (a == null) return;
+            if (a.GetLength(0) != a.GetLength(1)) return;
+            var n = a.GetLength(0);
+
+            for (var layer = 0; layer < n / 2; layer++)
+            {
+                for (var i = layer; i < n - 1 - layer; i++)
+                {
+                    var temp = a[layer, i];
+                    a[layer, i] = a[n - 1 - i, layer];
+                    a[n - 1 - i, layer] = a[n - 1 - layer, n - 1 - i];
+                    a[n - 1 - layer, n - 1 - i] = a[i, n - 1 - layer];
+                    a[i, n - 1 - layer] = temp;
+                }
+            }
         }
     }
 }
