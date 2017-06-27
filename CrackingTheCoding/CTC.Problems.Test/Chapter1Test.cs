@@ -107,6 +107,8 @@ namespace CTC.Problems.Test
         #endregion
 
 
+        #region 1.8 Rotate Matrix
+
         [Test]
         public void RotateMatrixNull()
         {
@@ -141,8 +143,19 @@ namespace CTC.Problems.Test
             CollectionAssert.AreEqual(expected, input);
         }
 
+        #endregion
 
+        #region 1.8 Zero Matrix
 
+        [Test]
+        public void ZeroMatrix()
+        {
+            var input = new int[,] { { 1, 2, 3, 4 }, { 5, 6, 0, 8 }, { 9, 10, 11, 12 }, { 13, 14, 15, 0 } };
+            var expected = new int[,] { { 1, 2, 0, 0 }, { 0, 0, 0, 0 }, { 9, 10, 0, 0 }, { 0, 0, 0, 0 } };
+            Chapter1.ZeroMatrix(input);
+            CollectionAssert.AreEqual(expected, input);
+        }
+        #endregion
 
     }
 }

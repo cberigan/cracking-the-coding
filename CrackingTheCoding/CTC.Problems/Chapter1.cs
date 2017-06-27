@@ -237,5 +237,41 @@ namespace CTC.Problems
                 }
             }
         }
+
+        public static void ZeroMatrix(int[,] a)
+        {
+            if (a == null) return;
+            var rows = a.GetLength(0);
+            var cols = a.GetLength(1);
+            var rSet = new HashSet<int>();
+            var cSet = new HashSet<int>();
+
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < cols; j++)
+                {
+                    if (a[i, j] == 0)
+                    {
+                        rSet.Add(i);
+                        cSet.Add(j);
+                        var itemp = i - 1;
+                        var jtemp = j - 1;
+                        while (itemp >= 0)
+                        {
+                            a[itemp--, j] = 0;
+                        }
+                        while (jtemp >= 0)
+                        {
+                            a[i, jtemp--] = 0;
+                        }
+                    }else if (rSet.Contains(i) || cSet.Contains(j))
+                    {
+                        a[i, j] = 0;
+                    }
+                }
+            }
+        }
+
+        
     }
 }
